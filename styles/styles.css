@@ -313,15 +313,6 @@ list-style:none;
         gap: 20px;
     }
 
-}
-
-@media (max-width: 767px) {
-
-    .contacto {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .contacto > * {
         width: 100%;
     }
@@ -360,15 +351,6 @@ grid-template-areas:
 "products products";
 
 grid-template-columns:1fr 1fr;
-
-}
-
-@media (max-width: 767px){
-
-    .contacto {
-        flex-direction: column;
-        gap: 20px;
-    }
 
 }
 
