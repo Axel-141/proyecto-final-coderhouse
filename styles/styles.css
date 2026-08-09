@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========================
+BODY
+=========================*/
+
+body {
+
+font-family:'Poppins', sans-serif;
+font-size:16px;
+font-weight:400;
+background-color:#84ff74;
+color: #333;
+line-height: 1.5;
+
+}
+
+/*========================
+TIPOGRAFIAS
+=========================*/
+
+h1{
+
+font-size:48px;
+
+font-weight:700;
+
+}
+
+h2{
+
+font-size: 32px;
+
+font-weight: 600;
+
+}
+
+h3 {
+
+font-size: 26px;
+
+font-weight: 600;
+
+}
+
+
+p{
+
+font-size: 16px;
+
+font-weight: 400;
+
+}
+
+/*=========================
+CONTAINER
+=========================*/
+
+.container {
+
+max-width: 1200px;
+
+margin: auto;
+
+padding: 20px;
+
+
+}
+
+/*=========================
+HEADER
+=========================*/
+
+.header {
+
+background-color: #ffffff;
+
+padding: 20px;
+
+border-radius: 20px;
+
+margin-bottom:30px;
+
+
+}
+
+.header-container {
+
+display: flex;
+
+align-items: center;
+
+gap: 20px;
+
+}
+
+.logo {
+
+width: 120px;
+
+border-radius: 50%;
+
+
+}
+
+
+/*=========================
+PRODUCTOS
+=========================*/
+
+.products {
+
+margin-top: 30px;
+
+
+}
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.product-image {
+
+width: 100%;
+
+border-radius: 15px;
+
+display:block;
+
+}
+
+
+/*=========================
+FOOTER
+=========================*/
+
+
+.footer {
+    
+    margin-top:40px;
+    padding:20px;
+    background-color:#FFFFFF;
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+
+    text-align:center;
+}
+
+/* =========================
+NAVBAR BOOTSTRAP
+========================= */
+
+.navbar{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+/* =========================
+   INDEX
+========================= */
+
+.about {
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.about-info {
+
+    grid-area:info;
+
+}
+
+.values {
+
+    grid-area:values;
+
+}
+
+.products {
+
+    grid-area:products;
+
+}
+
+.about-card {
+
+display:grid;
+
+grid-template-areas:
+"info"
+"values"
+"products";
+
+gap:30px;
+
+padding:20px;
+
+}
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyectos-card {
+
+display:grid;
+
+grid-template-areas:
+
+"titulo"
+
+"lista"
+
+"imagen"
+
+"texto";
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.proyectos-card h2 {
+
+grid-area:titulo;
+
+}
+
+.lista-proyectos {
+
+grid-area:lista;
+
+}
+
+.proyecto-imagen {
+
+grid-area:imagen;
+
+}
+
+.proyectos-card p {
+
+grid-area:texto;
+
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+
+display:flex;
+
+gap:40px;
+
+align-items:center;
+
+}
+
+.contacto-card {
+
+padding:20px;
+
+}
+
+.social-list,
+.redes-sociales {
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* =========================
+   CONTACTO - MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contacto > * {
+        width: 100%;
+    }
+
+}
+
+@media (min-width:768px) {
+
+.about-card {
+
+grid-template-areas: 
+
+"info info"
+"values products";
+
+grid-template-columns: 1fr 1fr;
+
+}
+
+.product-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media (min-width:1024px) {
+
+.about-card {
+
+grid-template-areas:
+
+"info values"
+
+"products products";
+
+grid-template-columns:1fr 1fr;
+
+}
+
+@media (max-width: 767px){
+
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+.proyectos-card {
+
+grid-template-areas:
+
+"titulo titulo"
+
+"lista imagen"
+
+"texto imagen";
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.navbar {
+
+flex-direction:row; }
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel {
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.carousel img{
+    height:500px;
+    object-fit:cover;
+}
+
+/* =========================
+   CARDS BOOTSTRAP
+========================= */
+
+.card {
+
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #F7F2EB;
+
+}
+
+.card img {
+
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.card-title {
+
+    color: #3B2A1E;
+    font-weight: 700;
+
+}
+
+.card-text {
+
+    color: #5A4632;
+
+}
