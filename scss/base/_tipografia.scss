@@ -1,0 +1,25 @@
+// =========================
+// TIPOGRAFÍA
+// =========================
+
+@use "../utilities/variables" as *;
+
+h1 {
+    font-size: $tamanio-titulo;
+    font-weight: $peso-negrita;
+}
+
+h2 {
+    font-size: $tamanio-subtitulo;
+    font-weight: $peso-medio;
+}
+
+h3 {
+    font-size: $tamanio-h3;
+    font-weight: $peso-medio;
+}
+
+p {
+    font-size: $tamanio-texto;
+    font-weight: $peso-normal;
+}

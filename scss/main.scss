@@ -1,0 +1,33 @@
+// =========================
+// ARCHIVO PRINCIPAL
+// =========================
+
+// =========================
+// UTILITIES
+// =========================
+
+@use "utilities/variables";
+@use "utilities/mixins";
+
+// =========================
+// BASE
+// =========================
+
+@use "base/base";
+@use "base/tipografia";
+
+// =========================
+// LAYOUT
+// =========================
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+// =========================
+// COMPONENTS
+// =========================
+
+@use "components/buttons";
+@use "components/cards";
+@use "components/sections";

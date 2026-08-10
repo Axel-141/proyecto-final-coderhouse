@@ -1,0 +1,18 @@
+// =========================
+// FOOTER
+// =========================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer {
+    margin-top: $espaciado-xl;
+    padding: $espaciado-md;
+    background-color: $color-blanco;
+    border-radius: $radio-lg;
+
+    @include flex-column-center;
+
+    gap: 15px;
+    text-align: center;
+}

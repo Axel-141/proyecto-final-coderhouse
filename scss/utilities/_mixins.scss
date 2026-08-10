@@ -1,0 +1,33 @@
+// =========================
+// MIXINS RESPONSIVE
+// =========================
+
+@mixin responsive-tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin responsive-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+// =========================
+// MIXINS FLEXBOX
+// =========================
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+// =========================
+// HEADER
+// =========================
+
+@use "../utilities/variables" as *;
+
+.header {
+    background-color: $color-blanco;
+    padding: $espaciado-md;
+    border-radius: $radio-lg;
+    margin-bottom: $espaciado-lg;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: $espaciado-md;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 50%;
+}

@@ -1,0 +1,170 @@
+// =========================
+// SECCIONES Y GRILLAS
+// =========================
+
+@use "../utilities/variables" as *;
+
+
+// =========================
+// PRODUCTOS
+// =========================
+
+.products {
+    margin-top: $espaciado-lg;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: $radio-md;
+    display: block;
+}
+
+
+// =========================
+// INDEX
+// =========================
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about-info {
+    grid-area: info;
+}
+
+.values {
+    grid-area: values;
+}
+
+.products {
+    grid-area: products;
+}
+
+.about-card {
+    display: grid;
+
+    grid-template-areas:
+        "info"
+        "values"
+        "products";
+
+    gap: $espaciado-lg;
+    padding: $espaciado-md;
+}
+
+
+// =========================
+// PROYECTOS
+// =========================
+
+.proyectos-card {
+    display: grid;
+
+    grid-template-areas:
+        "titulo"
+        "lista"
+        "imagen"
+        "texto";
+
+    gap: $espaciado-md;
+    padding: $espaciado-md;
+
+    h2 {
+        grid-area: titulo;
+    }
+
+    p {
+        grid-area: texto;
+    }
+}
+
+.lista-proyectos {
+    grid-area: lista;
+}
+
+.proyecto-imagen {
+    grid-area: imagen;
+}
+
+
+// =========================
+// CONTACTO
+// =========================
+
+.contacto {
+    display: flex;
+    gap: $espaciado-xl;
+    align-items: center;
+}
+
+.contacto-card {
+    padding: $espaciado-md;
+}
+
+.social-list,
+.redes-sociales {
+    display: flex;
+    gap: $espaciado-md;
+    list-style: none;
+}
+
+
+// =========================
+// RESPONSIVE
+// =========================
+
+@media (max-width: 767px) {
+
+    .contacto {
+        flex-direction: column;
+        gap: $espaciado-md;
+
+        > * {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .about-card {
+        grid-template-areas:
+            "info info"
+            "values products";
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .about-card {
+        grid-template-areas:
+            "info values"
+            "products products";
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .proyectos-card {
+        grid-template-areas:
+            "titulo titulo"
+            "lista imagen"
+            "texto imagen";
+
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,15 @@
+// =========================
+// NAVBAR
+// =========================
+
+@use "../utilities/variables" as *;
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado-md;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}

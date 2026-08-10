@@ -1,0 +1,45 @@
+// =========================
+// CAROUSEL
+// =========================
+
+@use "../utilities/variables" as *;
+
+.carousel {
+    border-radius: $radio-lg;
+    overflow: hidden;
+
+    img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+
+// =========================
+// CARDS BOOTSTRAP
+// =========================
+
+.card {
+    border: none;
+    border-radius: $radio-lg;
+    overflow: hidden;
+    background-color: $color-card;
+
+    img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.card-title {
+    color: $color-card-titulo;
+    font-weight: $peso-negrita;
+}
+
+.card-text {
+    color: $color-card-texto;
+}
