@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     
     <link rel="stylesheet" href="../css/style.css">
 
@@ -96,15 +98,14 @@
 <!-- Proyectos -->
 <section class="proyectos container my-5"> 
 
-
-<article class="proyectos-card">
+<article class="proyectos-card" data-aos="fade-up">
 <h2 class="text-center mb-4">Nuestros Proyectos</h2>
 
 <div class="row g-4">
 
     <div class="col-12 col-md-6 col-lg-4">
 
-        <div class="card h-100 shadow-sm">
+    <div class="card h-100 shadow-sm" data-aos="fade-up">
 
             <img src="../images/imperial.jpg.png"
                  class="card-img-top"
@@ -129,7 +130,7 @@
 
     <div class="col-12 col-md-6 col-lg-4">
 
-        <div class="card h-100 shadow-sm">
+    <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="150">
 
             <img src="../images/imperial-bordo.jpg.png"
                  class="card-img-top"
@@ -155,7 +156,7 @@
 
     <div class="col-12 col-md-6 col-lg-4">
 
-        <div class="card h-100 shadow-sm">
+    <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="300">
 
             <img src="../images/portada.jpg.png"
                  class="card-img-top"
@@ -250,6 +251,15 @@ Youtube
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
 
 </body>
 

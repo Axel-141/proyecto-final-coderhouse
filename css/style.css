@@ -84,15 +84,20 @@ p {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  gap: 15px;
   text-align: center;
 }
 
-.btn {
+.btn-base, .btn {
+  display: inline-block;
+  padding: 10px 20px;
   border-radius: 15px;
-  transition: opacity 0.3s ease;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.btn:hover {
+.btn-base:hover, .btn:hover {
   opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .carousel {
@@ -109,13 +114,19 @@ p {
   border-radius: 20px;
   overflow: hidden;
   background-color: #F7F2EB;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card img {
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.card:hover img {
+  transform: scale(1.03);
 }
 
 .card-title {
@@ -129,6 +140,12 @@ p {
 
 .products {
   margin-top: 30px;
+}
+
+.cta {
+  margin-top: 30px;
+  text-align: center;
+  animation: aparecer 0.8s ease-out;
 }
 
 .product-grid {
@@ -232,6 +249,21 @@ p {
     grid-template-areas: "titulo titulo" "lista imagen" "texto imagen";
     grid-template-columns: 1fr 1fr;
   }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about-card,
+.proyectos-card,
+.contacto-card {
+  animation: aparecer 0.8s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

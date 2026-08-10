@@ -1,10 +1,18 @@
 @use "../utilities/variables" as *;
 
-.btn {
+.btn-base {
+    display: inline-block;
+    padding: 10px 20px;
     border-radius: $radio-md;
-    transition: opacity 0.3s ease;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
     &:hover {
         opacity: 0.9;
+        transform: translateY(-2px);
     }
+}
+
+.btn {
+    @extend .btn-base;
 }

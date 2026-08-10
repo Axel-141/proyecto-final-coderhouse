@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     
     <link rel="stylesheet" href="../css/style.css">
 
@@ -89,7 +91,7 @@
 <main class="main">
 
 <!-- Nuestra Ubicación -->
-<section class="ubicacion-en-mapa">
+<section class="ubicacion-en-mapa" data-aos="fade-up">
 
 
 <article class="ubi-info">
@@ -109,7 +111,7 @@
 
 
 
-<figure class="ubicacion-imagen">
+<figure class="ubicacion-imagen" data-aos="zoom-in">
 
 
 <img 
@@ -133,8 +135,10 @@ class="imagen-mapa">
 
 
 <a 
-class="boton-ubicacion"
-href="https://www.google.com/maps/place/Terminal+de+Bahia+Blanca/">
+    class="boton-ubicacion"
+    data-aos="fade-up"
+    data-aos-delay="150"
+    href="https://www.google.com/maps/place/Terminal+de+Bahia+Blanca/">
 
 Ver ubicación en Google Maps
 
@@ -201,6 +205,15 @@ Youtube
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
 
 </body>
 
