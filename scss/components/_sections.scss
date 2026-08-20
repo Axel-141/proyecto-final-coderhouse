@@ -11,6 +11,7 @@
 
 .products {
     margin-top: $espaciado-lg;
+    grid-area: products;
 }
 
 .cta {
@@ -49,9 +50,6 @@
     grid-area: values;
 }
 
-.products {
-    grid-area: products;
-}
 
 .about-card {
     display: grid;

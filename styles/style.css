@@ -64,14 +64,7 @@ p {
 }
 
 .navbar {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
-}
-@media (min-width: 1024px) {
-  .navbar {
-    flex-direction: row;
-  }
 }
 
 .footer {
@@ -83,7 +76,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   gap: 15px;
   text-align: center;
 }
@@ -140,6 +132,7 @@ p {
 
 .products {
   margin-top: 30px;
+  grid-area: products;
 }
 
 .cta {
@@ -171,10 +164,6 @@ p {
 
 .values {
   grid-area: values;
-}
-
-.products {
-  grid-area: products;
 }
 
 .about-card {
